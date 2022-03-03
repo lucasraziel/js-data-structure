@@ -15,10 +15,12 @@
     },
     "plugins": [
         "@typescript-eslint", 
-        "import"
+        "import",
+        "prettier"
     ],
     "rules": {
         "import/no-unresolved": "error",
+        "prettier/prettier": ["error", { "endOfLine": "auto" }],
         "import/extensions": [
             "error",
             "ignorePackages",
@@ -26,7 +28,8 @@
                 "ts": "never",
                 "tsx": "never"
             }
-        ]
+        ],
+        "no-plusplus": "off"
     },
     "settings": {
         "import/parsers": {
