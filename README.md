@@ -1,0 +1,1 @@
+This is a working project to demonstrate data structure using Javascript superset (typescript).
