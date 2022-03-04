@@ -6,6 +6,8 @@
     },
     "extends": [
         "airbnb-base",
+        "plugin:react/recommended",
+        "plugin:jsx-a11y/recommended",
         "prettier"
     ],
     "parser": "@typescript-eslint/parser",
@@ -16,11 +18,18 @@
     "plugins": [
         "@typescript-eslint", 
         "import",
-        "prettier"
+        "prettier",
+        "react",
+        "react-hooks",
+        "jsx-a11y"
     ],
     "rules": {
+        "react/prop-types": "off",
         "import/no-unresolved": "error",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "error",
         "prettier/prettier": ["error", { "endOfLine": "auto" }],
+        "import/prefer-default-export": "off",
         "import/extensions": [
             "error",
             "ignorePackages",
@@ -29,7 +38,8 @@
                 "tsx": "never"
             }
         ],
-        "no-plusplus": "off"
+        "no-plusplus": "off",
+        "class-methods-use-this": "off"
     },
     "settings": {
         "import/parsers": {

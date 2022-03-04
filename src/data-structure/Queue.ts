@@ -77,6 +77,7 @@ export default class Queue<T = Number> {
       if (printFn) {
         printFn(current.value);
       } else {
+        // eslint-disable-next-line no-console
         console.log(current.value);
       }
       current = current.next;
